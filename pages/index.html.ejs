@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MV Map</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<style>
+
+		.dot-container {
+			width: 500px;
+			height: 500px;
+			position: relative;
+			border: 5px black double;
+			margin: 50px;
+		}
+
+		#dot {
+			width: 10px;
+			height: 10px;
+			background-color: red;
+			position: relative;
+			display: block;
+			top: 10px;
+			left: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<script src="/public/eruda/eruda.js"></script>
+	<button onclick="eruda.init()">Console</button>
+
+	<div class="dot-container">
+		<span id="dot"></span>
+	</div>
+
+	<button onclick="click1()">C1</button>
+	<button onclick="click2()">C2</button>
+
+	<script src="/js/map.js"></script>
+</body>
+</html>

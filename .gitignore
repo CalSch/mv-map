@@ -1,0 +1,20 @@
+# IDEs
+.idea
+.project
+.classpath
+.c9
+.settings
+.vscode
+*.launch
+*.sublime-workspace
+
+# Node.Js
+node_modules/
+package-lock.json
+
+jsconfig.json
+
+# etc
+.env
+.DS_Store
+Thumbs.db
