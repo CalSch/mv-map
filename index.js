@@ -46,9 +46,9 @@ app.get('*',(req,res)=>{
 	if (resource==='/') {
 		resource="/index.html";
 	}
-	let routeName='routes/'+resource.substring(1,resource.length).split('.')[0];
-	console.log(resource);
-	console.log(routeName);
+	let routeName='routes/'+resource.substring(1,resource.length).split('.').slice(0,-1).join('.');
+	// console.log(resource);
+	// console.log(routeName);
 
 	if (fs.existsSync(`./public${resource}`)) {
 		setFileHeaders(resource,res);
